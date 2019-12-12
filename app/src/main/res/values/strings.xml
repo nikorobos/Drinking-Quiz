@@ -1,0 +1,115 @@
+<resources>
+    // Qustions
+    <string name="app_name">Drinking Quiz</string>
+    <string name="question_1">1. Ηow long does it take (in minutes) for the brain to start to react to alcohol?</string>
+    <string name="question_2">2. Did the pirate from Captain Morgan exist?</string>
+    <string name="question_3">3. When\'s the first beer reference in history?</string>
+    <string name="question_4">4. Which beer had the swastika on its logo?</string>
+    <string name="question_5">5. How many countries in the world are banned from drinking alcohol of any age?</string>
+    <string name="question_6">6. How many million liters of beer does Greece export annually?</string>
+    <string name="question_7">7. When was ALPHA beer first released?</string>
+    <string name="question_8">8. When was Vergina beer first released?</string>
+    <string name="question_9">9. Where does Limoncello come from?</string>
+    <string name="question_10">10. From where in Greece does ZEOS beer come from?</string>
+    <string name="question_11">11. Where did the first wine findings were in history were discovered ?</string>
+    <string name="question_12">12. Which of the following Whiskey brands has the highest alcohol content?</string>
+    <string name="question_13">13. Which of the following Vodka brands has the highest alcohol content?</string>
+    <string name="question_14">14. Which of the following Rum brands has the highest alcohol content?</string>
+    <string name="question_15">15. When was the first cocktail made?</string>
+    <string name="question_16">16. How many heads does the dog have on the McFarland beer logo?</string>
+    <string name="question_17">17. What number does Jack Daniels have on his logo?</string>
+    <string name="question_18">18. Which brand of beer is the sponsor of UEFA Champions League?</string>
+    <string name="question_19">19. What does James Bond drink?</string>
+    <string name="question_20">20. Which company gives its employees a bottle of alcohol every first Friday of the month?</string>
+
+    //Answers
+    <string name="q2_an1">Yes</string>
+    <string name="q2_an2">No</string>
+    <string name="q3_an1">500 b.C.</string>
+    <string name="q3_an2">3,500 b.C.</string>
+    <string name="q3_an3">15 a.C.</string>
+    <string name="q3_an4">674 a.C.</string>
+    <string name="q5_an4">None</string>
+    <string name="q9_an1">South Italy</string>
+    <string name="q9_an2">Kerkyra</string>
+    <string name="q9_an3">Malta</string>
+    <string name="q9_an4">San Marino</string>
+    <string name="q10_an1">Tinos</string>
+    <string name="q10_an2">Athens</string>
+    <string name="q10_an3">Crete</string>
+    <string name="q10_an4">Argos</string>
+    <string name="q11_an1">Ancient Greece</string>
+    <string name="q11_an2">Georgia</string>
+    <string name="q11_an3">Italy</string>
+    <string name="q11_an4">Iceland</string>
+    <string name="q15_an4">114 b.C.</string>
+    <string name="q18_an1">Zeos</string>
+    <string name="q19_an3">Malamatina Cola (Toumba Libre)</string>
+
+    //Button for next question
+    <string name="button_next">NEXT</string>
+    <string name="button_next2">NEXT</string>
+    <string name="button_next3">NEXT</string>
+    <string name="button_next4">NEXT</string>
+    <string name="button_next5">NEXT</string>
+    <string name="button_next6">NEXT</string>
+    <string name="button_next7">NEXT</string>
+    <string name="button_next8">NEXT</string>
+    <string name="button_next9">NEXT</string>
+    <string name="button_next10">NEXT</string>
+    <string name="button_next11">NEXT</string>
+    <string name="button_next12">NEXT</string>
+    <string name="button_next13">NEXT</string>
+    <string name="button_next14">NEXT</string>
+    <string name="button_next15">NEXT</string>
+    <string name="button_next16">NEXT</string>
+    <string name="button_next17">NEXT</string>
+    <string name="button_next18">NEXT</string>
+    <string name="button_next19">NEXT</string>
+    <string name="button_next20">NEXT</string>
+
+    //Question for starting over
+    <string name="start_again">Do you want to know what you did wrong or start from the beginning?</string>
+    <string name="no_start_again">NO, START AGAIN</string>
+
+
+    //Score
+    <string name="user_score">Your score is : </string>
+
+    //Texts below score
+
+    <string name="first_message">Start drinking more!</string>
+    <string name="second_message">Good but think reducing alcohol.</string>
+    <string name="second_message2">You know better though!</string>
+    <string name="fourth_message">Well done my boy 20/20 you have less years to live than 1/4 of your score</string>
+    <string name="hou_message">Cheers Loco! Blaze it!</string>
+    <string name="third_message">At the limits of alcoholism.</string>
+    <string name="third_message2">I hope the drink doesn\'t spoil you!</string>
+    <string name="yes_show_answers">YES</string>
+
+//Tips
+    <string name="tip1">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip2">Captain Morgan was a reality and lived a terrible life! We\'re talking about Henry Morgan. He was born in 1635 and died in 1688 and was a British (Welsh) pirate and pirate first and later an Admiral of the Royal Navy. He became known for his action in the Caribbean and his battles with the Spanish settlers.</string>
+    <string name="tip3">Chemical tests of ancient pottery jars reveal that beer was produced about  3,500 BC in what is today Iran. </string>
+    <string name="tip4">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip5">1.Yemen\n2.United Arab Emirates (In Sharja)\n3.Sudan\n4.Somalia\n5.Saudi Arabia\n6.Pakistan\n7.Mauritania\n8.Maldives\n9.Libya\n10.Kuwait\n11.Iran(Muslims)\n12.India (In Certain States)\n13.Brunei\n14.Bangladesh</string>
+    <string name="tip6">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip7">ALFA beer is one of the oldest and most historic beer brands in Greece with a high quality tradition since 1961.</string>
+    <string name="tip8">Dimitris Politopoulos\' love for good beer and Greece created the Thrace Brewery on 1 February 1996.</string>
+    <string name="tip9">Its origin comes from southern Italy and specifically from the areas of Campania, which are particularly famous for their lemons.</string>
+    <string name="tip10">ZEOS is located in Inachos, 4km away from Argos.</string>
+    <string name="tip11">The earliest evidence of wine is in Georgia from 6000 BC.</string>
+    <string name="tip12">Bruichladdich X4+3 Quadrupled contains 63,5% Alcohol</string>
+    <string name="tip13">At a full 95% alcohol by volume, this is the strongest spirit on the commercial market.</string>
+    <string name="tip14">River Antoine Royale Grenadian Rum (90% Alcohol)</string>
+    <string name="tip15">The first recorded use of cocktail as a beverage (possibly non-alcoholic) in the United States appears in The Farmer\'s Cabinet, April 28, 1803</string>
+    <string name="tip16">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip17">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip18">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip19">The Vodka Martini is the drink most often consumed by Bond (over 20 times).</string>
+    <string name="tip20">According to the Jack Daniel\'s Master Distiller, “The employees get a free bottle every month. No one misses that day of work!”</string>
+
+
+
+
+</resources>

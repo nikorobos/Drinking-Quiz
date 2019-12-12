@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    >
+
+    <ListView
+        android:id="@+id/myTextView"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/question_background"
+       android:text="@string/question_1"
+       android:textColor="#FFFFFF"
+       android:textSize="30sp"
+       android:textStyle="bold"
+
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;" />
+
+
+   <RadioGroup
+       android:id="@+id/RadioGroup"
+       style="@style/AnswerGroup"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/textView"
+
+       >
+
+
+      <RadioButton
+          android:id="@+id/radioButton1"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="67dp"
+          android:buttonTint="#ffffff"
+          android:text="4"
+          app:layout_constraintTop_toBottomOf="@+id/textView"
+          tools:text="4"
+          android:onClick="choiceCLicked"/>
+
+
+      <RadioButton
+          android:id="@+id/radioButton2"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="4.5"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton"
+          tools:text="4.5"
+          android:onClick="choiceCLicked"/>
+
+      <RadioButton
+          android:id="@+id/radioButton3"
+
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="6"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+          tools:text="5"
+          android:onClick="choiceCLicked"/>
+
+      <RadioButton
+          android:id="@+id/radioButton4"
+
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="7"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+          tools:text="7"
+          android:onClick="choiceCLicked"/>
+   </RadioGroup>
+
+   <Button
+       android:id="@+id/button"
+        android:text="@string/button_next"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/NextButton"
+       android:visibility="invisible"
+       android:onClick="buttonNext"/>
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="160dp"
+       android:layout_height="265dp"
+
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView"
+       app:layout_constraintVertical_bias="0.0"
+       app:srcCompat="@drawable/beer" />
+
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/question_background"
+       android:text="@string/question_2"
+       android:textColor="#FFFFFF"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+       android:visibility="invisible"/>
+
+   <RadioGroup
+       android:id="@+id/RadioGroup2"
+       style="@style/AnswerGroup"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/textView"
+       android:visibility="invisible"
+       >
+
+
+      <RadioButton
+          android:id="@+id/radioButton1_2"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="67dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q2_an1"
+          app:layout_constraintTop_toBottomOf="@+id/textView"
+          tools:text="Ναι"
+          android:onClick="choiceCLicked2"/>
+
+
+      <RadioButton
+          android:id="@+id/radioButton2_2"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q2_an2"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton"
+          tools:text="Όχι"
+          android:onClick="choiceCLicked2"/>
+
+   </RadioGroup>
+
+   <Button
+       android:id="@+id/button2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/NextButton"
+       android:text="@string/button_next2"
+       android:visibility="invisible"
+       android:onClick="buttonNext2"/>
+
+   <ImageView
+       android:id="@+id/imageView2"
+       android:layout_width="190dp"
+       android:layout_height="295dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textView"
+       app:layout_constraintVertical_bias="0.0"
+       app:srcCompat="@drawable/jollyroger"
+       android:visibility="invisible"/>
+
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/question_background"
+       android:text="@string/question_3"
+       android:textColor="#FFFFFF"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+       android:visibility="invisible"/>
+
+
+   <RadioGroup
+       android:id="@+id/RadioGroup3"
+       style="@style/AnswerGroup"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/textView"
+       android:visibility="invisible"
+
+       >
+
+
+      <RadioButton
+          android:id="@+id/radioButton1_3"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="67dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q3_an1"
+          app:layout_constraintTop_toBottomOf="@+id/textView"
+
+          android:onClick="choiceCLicked3"/>
+
+
+      <RadioButton
+          android:id="@+id/radioButton2_3"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q3_an2"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+          android:onClick="choiceCLicked3"/>
+
+      <RadioButton
+          android:id="@+id/radioButton3_3"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q3_an3"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+          android:onClick="choiceCLicked3"/>
+
+      <RadioButton
+          android:id="@+id/radioButton4_3"
+          style="@style/Answers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:buttonTint="#ffffff"
+          android:text="@string/q3_an4"
+          app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+          android:onClick="choiceCLicked3"/>
+
+   </RadioGroup>
+
+   <Button
+       android:text="@string/button_next3"
+       android:id="@+id/button3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/NextButton"
+       android:visibility="invisible"
+       android:onClick="buttonNext3"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/history" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_4"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup4"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_4"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="Fischer"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked4"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_4"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Altbier"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked4"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2_4"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Schneider weisse"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked4"/>
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton4_4"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Carlsberg"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked4"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/antifa"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:text="@string/button_next4"
+        android:visibility="invisible"
+        android:onClick="buttonNext4"/>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup5"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_5"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="14"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked5"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_5"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="26"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked5"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_5"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="12"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked5"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_5"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q5_an4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked5"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next5"
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext5"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/noalcohol" />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_6"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup6"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_6"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="360"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked6"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_6"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="356"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked6"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_6"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="784"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked6"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_6"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="890"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked6"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button6"
+        android:text="@string/button_next6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext6"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/barrel" />
+
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_7"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup7"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_7"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="1957"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked7"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_7"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1821"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked7"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_7"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1961"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked7"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_7"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1964"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked7"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:text="@string/button_next7"
+        android:visibility="invisible"
+        android:onClick="buttonNext7"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="285dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/alfalogo" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_8"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup8"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_8"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="1996"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked8"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_8"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1986"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked8"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_8"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1953"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked8"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_8"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1897"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked8"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button8"
+        android:text="@string/button_next8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext8"/>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="180dp"
+        android:layout_height="285dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vergina" />
+
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_9"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup9"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_9"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q9_an2"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked9"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_9"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q9_an3"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked9"/>
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton4_9"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q9_an4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked9"/>
+        <RadioButton
+            android:id="@+id/radioButton1_9"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q9_an1"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked9"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button9"
+        android:text="@string/button_next9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext9"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shots" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_10"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup10"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_10"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q10_an1"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked10"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_10"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q10_an2"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked10"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_10"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q10_an3"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked10"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_10"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q10_an4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked10"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button10"
+        android:text="@string/button_next10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext10"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="200dp"
+        android:layout_height="305dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/zeos"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_11"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup11"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton3_11"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q11_an3"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked11"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_11"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q11_an2"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked11"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_11"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q11_an1"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked11"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_11"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q11_an4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked11"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next11"
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext11"/>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/scroll" />
+
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_12"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup12"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView12"
+        android:visibility="invisible"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton3_12"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Yamazaki"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked12"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2_12"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="VAT 69"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked12"/>
+
+        <RadioButton
+            android:id="@+id/radioButton1_12"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Johnny Walker Blue"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked12"/>
+
+
+
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton4_12"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Bruichladdich X4+3 Quadrupled"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked12"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next12"
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext12"/>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/whiskey" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_13"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup13"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView13"
+        android:visibility="invisible"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton3_13"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Balkan 176"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked13"/>
+
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_13"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Spiritus"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked13"/>
+
+        <RadioButton
+            android:id="@+id/radioButton1_13"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Golden Grace"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked13"/>
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton4_13"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Russian Standard"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked13"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next13"
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext13"/>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vodka" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_14"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup14"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView14"
+        android:visibility="invisible"
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton3_14"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Bacardi 151"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked14"/>
+
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_14"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="John Crow\nBatty "
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked14"/>
+        <RadioButton
+            android:id="@+id/radioButton1_14"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="River Antoine Royale Grenadian"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked14"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton4_14"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Clarces Curt Spicy"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked14"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next14"
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext14"/>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rum" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_15"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup15"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_15"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="1765"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked15"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_15"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1717"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked15"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_15"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="1803"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked15"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_15"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q15_an4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked15"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next15"
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext15"/>
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="140dp"
+        android:layout_height="245dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:layout_marginRight="36dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cocktail" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_16"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup16"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_16"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="7"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked16"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_16"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="4"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked16"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_16"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="3"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked16"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_16"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="2"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked16"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next16"
+        android:id="@+id/button16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext16"/>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        android:layout_marginRight="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/heads" />
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_17"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup17"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_17"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="7"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked17"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_17"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="10"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked17"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_17"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="12"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked17"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_17"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked17"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next17"
+        android:id="@+id/button17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext17"/>
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="210dp"
+        android:layout_height="315dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="24dp"
+        app:srcCompat="@drawable/jack" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_18"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup18"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_18"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q18_an1"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked18"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_18"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Heineken"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked18"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_18"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Fischer"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked18"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_18"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Kaiser"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked18"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next18"
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext18"/>
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/uefa" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_20"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup20"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView20"
+        android:visibility="invisible"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton4_20"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:text="Absolut"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked20"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_20"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Jack \nDaniels"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked20"/>
+        <RadioButton
+            android:id="@+id/radioButton1_20"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Johnnie \nWalker"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked20"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_20"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:buttonTint="#ffffff"
+            android:text="Captain \nMorgan"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked20"/>
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next20"
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext20"/>
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="210dp"
+        android:layout_height="315dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/friday" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question_background"
+        android:text="@string/question_19"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup19"
+        style="@style/AnswerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:visibility="invisible"
+
+        >
+
+
+        <RadioButton
+            android:id="@+id/radioButton1_19"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:buttonTint="#ffffff"
+            android:text="Martini"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+
+            android:onClick="choiceCLicked19"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButton2_19"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Jack Daniels"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton"
+
+            android:onClick="choiceCLicked19"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3_19"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="@string/q19_an3"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+
+            android:onClick="choiceCLicked19"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4_19"
+            style="@style/Answers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:buttonTint="#ffffff"
+            android:text="Bourbon"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton3"
+
+            android:onClick="choiceCLicked19"/>
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_next19"
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        android:onClick="buttonNext19"/>
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="160dp"
+        android:layout_height="265dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/james" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/textView21"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="@string/start_again"
+        app:layout_constraintTop_toBottomOf="@id/textView22"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Πόσο τοις εκατό(%) αλκοόλ περιέχει μια φυσιολογική μπύρα;" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes_show_answers"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toTopOf="@id/button22"
+        style="@style/NextButton"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NextButton"
+        android:gravity="center_horizontal"
+
+        android:text="@string/no_start_again"
+        android:visibility="invisible"
+        android:onClick="buttonRestart"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

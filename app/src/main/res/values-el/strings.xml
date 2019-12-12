@@ -1,0 +1,115 @@
+<resources>
+    // Qustions
+    <string name="app_name">Drinking Quiz</string>
+    <string name="question_1">1. Πόσο χρόνο χρειάζεται ο εγκέφαλος(σε λεπτά) για να αρχίσει να αντιδρά στο αλκοόλ;</string>
+    <string name="question_2">2. Υπήρξε ο πειρατής στο λογότυπο από το Ρούμι Captain Morgan;</string>
+    <string name="question_3">3. Πότε χρονολογείται η πρώτη αναφορά μπύρας στην ιστορία;</string>
+    <string name="question_4">4. Ποια μπύρα είχε στο λογότυπο της τη σβάστικα;</string>
+    <string name="question_5">5. Σε πόσες χώρες στον κόσμο απαγορεύεται η κατανάλωση αλκοόλ ανεξαρτήτου ηλικίας;</string>
+    <string name="question_6">6. Πόσα εκατομμύρια λίτρα μπύρας εξάγει η Ελλάδα ετησίως;</string>
+    <string name="question_7">7. Πότε κυκλοφόρησε για πρώτη φορά η μπύρα ΑΛΦΑ;</string>
+    <string name="question_8">8. Πότε κυκλοφόρησε για πρώτη φορά η μπύρα Βεργίνα;</string>
+    <string name="question_9">9. Από ποια χώρα προέρχεται το Limoncello;</string>
+    <string name="question_10">10. Από ποιο μέρος της Ελλάδας προέρχεται η μπύρα ΖΕΟΣ;</string>
+    <string name="question_11">11. Σε ποια χώρα βρέθηκαν τα πρώτα ευρήματα κρασιού στην ιστορία;</string>
+    <string name="question_12">12. Ποια απο τις παρακάτω μάρκες Ουίσκι έχει τη μεγαλύτερη περιεκτικότητα σε αλκοόλ;</string>
+    <string name="question_13">13. Ποια απο τις παρακάτω μάρκες Βότκας έχει τη μεγαλύτερη περιεκτικότητα σε αλκοόλ;</string>
+    <string name="question_14">14. Ποια απο τις παρακάτω μάρκες Ρούμι έχει τη μεγαλύτερη περιεκτικότητα σε αλκοόλ;</string>
+    <string name="question_15">15. Πότε φτιάχτηκε το πρώτο cocktail;</string>
+    <string name="question_16">16. Πόσα κεφάλια έχει το σκυλί στο λογότυπο της μπύρας McFarland;</string>
+    <string name="question_17">17. Ποιον αριθμό έχει στο λογότυπο του το Jack Daniels;</string>
+    <string name="question_18">18. Ποια μάρκα μπύρας είναι χορηγός στη διοργάνωση UEFA Champions League;</string>
+    <string name="question_19">19. Τι ποτό πίνει ο James Bond;</string>
+    <string name="question_20">20. Ποια εταιρεία δίνει στους εργαζόμενους της κάθε πρώτη Παρασκευή του μήνα ενα μπουκάλι αλκοόλ δώρο;</string>
+
+    //Answers
+    <string name="q2_an1">Ναι</string>
+    <string name="q2_an2">Όχι</string>
+    <string name="q3_an1">500 π.Χ.</string>
+    <string name="q3_an2">3,500 π.Χ.</string>
+    <string name="q3_an3">15 μ.Χ.</string>
+    <string name="q3_an4">674 μ.Χ.</string>
+    <string name="q5_an4">Καμία</string>
+    <string name="q9_an1">Νότια Ιταλία</string>
+    <string name="q9_an2">Κέρκυρα</string>
+    <string name="q9_an3">Μάλτα</string>
+    <string name="q9_an4">Σαν Μαρίνο</string>
+    <string name="q10_an1">Τήνος</string>
+    <string name="q10_an2">Αθήνα</string>
+    <string name="q10_an3">Κρήτη</string>
+    <string name="q10_an4">Άργος</string>
+    <string name="q11_an1">Αρχαία Ελλάδα</string>
+    <string name="q11_an2">Γεωργία</string>
+    <string name="q11_an3">Ιταλία</string>
+    <string name="q11_an4">Ισλανδία</string>
+    <string name="q15_an4">114 π.Χ.</string>
+    <string name="q18_an1">Ζέος</string>
+    <string name="q19_an3">Μαλαματίνα Cola (Τούμπα Libre)</string>
+
+    //Button for next question
+    <string name="button_next">ΕΠΟΜΕΝΟ</string>
+
+    //Question for starting over
+    <string name="start_again">Θες να μάθεις ποιές έκανες λάθος ή να ξεκινήσεις από την αρχή;</string>
+    <string name="yes_show_answers">ΝΑΙ</string>
+    <string name="no_start_again">ΟΧΙ, ΕΠΑΝΕΚΙΝΗΣΗ ΠΑΙΧΝΙΔΙΟΥ</string>
+
+
+    //Score
+    <string name="user_score">Το σκορ σου είναι : </string>
+
+    //Texts below score
+    <string name="first_message">Ξεκίνα να πίνεις περισσότερο!</string>
+    <string name="second_message">Καλός αλλά σκέψου μήπως πρέπει να ελλατώσεις το αλκοόλ.</string>
+    <string name="second_message2">Εσύ ξέρεις καλύτερα!</string>
+    <string name="third_message">Στα όρια ψαχγμένου αλκοολισμού.</string>
+    <string name="third_message2">Ελπίζω το ποτό να μη σε χαλάει!</string>
+    <string name="fourth_message">Μπράβο αγόρι μου 20/20 έχεις λιγότερα χρόνια ζωής από το 1/4 του σκορ σου</string>
+    <string name="hou_message">Βεςβι τσάκαλε! Φλόγισέ το!</string>
+    <string name="button_next10">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next11">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next12">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next13">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next14">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next15">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next16">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next17">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next18">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next19">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next2">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next20">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next3">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next4">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next5">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next6">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next7">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next8">ΕΠΟΜΕΝΟ</string>
+    <string name="button_next9">ΕΠΟΜΕΝΟ</string>
+
+
+
+
+    //tips
+
+    <string name="tip1">Μετά απο 6 λεπτά ο εγκέφαλος αντιδρά στο αλκοόλ.</string>
+    <string name="tip2">Ο Κάπτεν Μόργκαν υπήρξε στην πραγματικότητα και έζησε μία φοβερή ζωή! Μιλάμε για τον Χένρι Μόργκαν. Γεννήθηκε στο 1635 και πέθανε το 1688 και ήταν Βρετανός (Ουαλός) κουρσάρος και πειρατής αρχικά και αργότερα ναύαρχος του Βασιλικού Ναυτικού. Έγινε γνωστός για τη δράση του στην Καραϊβική και στις μάχες του με τους Ισπανούς αποίκους.</string>
+    <string name="tip3">Οι χημικές δοκιμές των αρχαίων αγγείων κεραμικής αποκαλύπτουν ότι η μπύρα παρήχθη γύρω στα 3.500 π.Χ. στο σημερινο Ιράν.</string>
+    <string name="tip4">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip5">1.Υεμένη\n2.Ηνωμένα Αραβικά  Εμιράτα (στη Σάρια)\n3.Σουδάν\n4.Σομαλία\n5.Σαουδική Αραβία\n6.Πακιστάν\n7.Μαυριτανία\n8.Μαλδίβες\n9.Λιβύη\n10.Κουβέιτ\n11.Ιράν(μόνο οι Μουσουλμάνοι)\n12.Ινδία (σε συγκεκριμένες πολιτείες)\n13.Mπρουνέι\n14.Μπαγκλαντές</string>
+    <string name="tip6">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip7">Η μπύρα ΑΛΦΑ είναι από τις παλαιότερες και πιο ιστορικές μάρκες μπύρας στην Ελλάδα με παράδοση στην υψηλή ποιότητα από το 1961.</string>
+    <string name="tip8">Η αγάπη του Δημήτρη Πολιτόπουλου για καλή μπύρα και την Ελλάδα δημιουργήσαν την Ζυθοποιία Μακεδονίας Θράκης την 1 Φεβρουαρίου 1996.</string>
+    <string name="tip9">Η καταγωγή του είναι από την Νότια Ιταλία και συγκεκριμένα από την Campania, η οποία είναι ιδιαίτερα φημισμένη για τα λεμόνια της.</string>
+    <string name="tip10">Η ΖΕΟΣ βρίσκεται στον Ίναχο Αργολίδας, 4χλμ μακριά από το Άργος.</string>
+    <string name="tip11">Τα πρώτα ευρήματα κρασιού στη ιστορία βρέθηκαν στην περιοχή της σημερινής Γεωργίας τα οποία χρονολογούνται από το 6000π.Χ. </string>
+    <string name="tip12">To Bruichladdich X4+3 Quadrupled περιέχει 63,5% αλκοόλ.</string>
+    <string name="tip13">Με ποσοστό αλκοόλ 95% είναι το ισχυρότερο ποτό στην αγορά</string>
+    <string name="tip14"> Το ρούμι River Antoine Royale Grenadian(90% αλκοόλ)</string>
+    <string name="tip15">Η πρώτη καταγεγραμμένη χρήση κοκτέιλ ως ποτού (ενδεχομένως μη αλκοολούχου) στις Ηνωμένες Πολιτείες εμφανίζεται στο The Farmer\'s Cabinet, 28 Απριλίου 1803</string>
+    <string name="tip16">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip17">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip18">6 mins is how long it takes for the brain to start to react to alcohol.</string>
+    <string name="tip19">Η Vodka Martini είναι το ποτό που καταναλώνεται συχνότερα από τον Bond (πάνω από 20 φορές)</string>
+    <string name="tip20">Σύμφωνα με τoν Master Distiller του Jack Daniels, "Οι εργαζόμενοι λαμβάνουν ένα δωρεάν μπουκάλι κάθε μήνα. Κανείς δεν χάνει εκείνη την ημέρα εργασίας! "</string>
+
+</resources>
